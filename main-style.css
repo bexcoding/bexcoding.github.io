@@ -1,6 +1,24 @@
 /* all */
 
 /* header */
+header p {
+    display: inline-block;
+}
+
+#website-icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    list-style: none;
+}
 
 /* main */
 
@@ -10,7 +28,7 @@ footer p {
 }
 
 #github-icon {
-    width: 40px;
     height: 40px;
+    width: 40px;
     display: inline-block;
 }
