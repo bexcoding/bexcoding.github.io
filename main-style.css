@@ -10,36 +10,11 @@ body {
 }
 
 /* header */
+
 header {
     background-color: #36827f;
     padding-bottom: 20px;
     border-bottom: var(--accent-color-1) solid 10px;
-}
-
-#dropdown ul{
-    display: none;
-}
-
-
-header ul{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-}
-
-a {
-    color: var(--accent-color-1);
-    font-size: 1.2em;
-}
-
-a:hover {
-    color: var(--accent-color-3);
-}
-
-header h3 {
-    display: inline-block;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;
-    color: var(--accent-color-2);
 }
 
 #website-icon {
@@ -49,14 +24,58 @@ header h3 {
     border-radius: 10px;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 10px;
-    list-style: none;
+header h3 {
+    display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    color: var(--accent-color-2);
 }
+
+/* Dropdown Button */
+.drop-header {
+    background-color: var(--accent-color-2);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+  
+.dropdown {
+    position: relative;
+    float: right;
+    padding-right: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .drop-header {
+    background-color: #3e8e41;
+} 
 
 /* main */
 main {
