@@ -15,7 +15,7 @@ body {
 
 header {
     background-color: var(--background-color-2);
-    padding-bottom: 20px;
+    padding: 20px;
     border-bottom: var(--accent-color-1) solid 10px;
 }
 
@@ -33,7 +33,7 @@ header h3 {
     color: var(--accent-color-2);
 }
 
-/* Dropdown Button */
+/* dropdown button in header*/
 .drop-header {
     background-color: var(--accent-color-2);
     color: var(--accent-color-3);
@@ -56,13 +56,13 @@ header h3 {
     position: absolute;
     color: var(--accent-color-2);
     background-color: var(--background-color-1);
-    min-width: 160px;
+    min-width: 180px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
   
 .dropdown-content a {
-    color: black;
+    color: var(--accent-color-2);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -71,6 +71,7 @@ header h3 {
 .dropdown-content a:hover {
     color: var(--accent-color-1);
     background-color: var(--accent-color-3);
+    border-left: solid var(--accent-color-2) 3px;
 }
   
 .dropdown:hover .dropdown-content {
@@ -85,8 +86,7 @@ header h3 {
 /* main */
 main {
     background-color: var(--background-color-1);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 40px;
 }
 
 h1 {
@@ -106,7 +106,7 @@ p {
 footer {
     background-color: var(--background-color-2);
     color: var(--accent-color-2);
-    padding-top: 20px;
+    padding: 20px;
     border-top: var(--accent-color-1) solid 10px;
 }
 
