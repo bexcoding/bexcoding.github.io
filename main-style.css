@@ -1,4 +1,10 @@
 /* all */
+:root {
+    --accent-color-1: #850400;
+    --accent-color-2: #1a1b41;
+    --accent-color-3: #f9db6d;
+}
+
 body {
     margin: 0;
 }
@@ -6,22 +12,41 @@ body {
 /* header */
 header {
     background-color: #36827f;
+    padding-bottom: 20px;
+    border-bottom: var(--accent-color-1) solid 10px;
 }
+
+#dropdown ul{
+    display: none;
+}
+
 
 header ul{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+a {
+    color: var(--accent-color-1);
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: var(--accent-color-3);
 }
 
 header h3 {
     display: inline-block;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 2em;
+    color: var(--accent-color-2);
 }
 
 #website-icon {
     display: inline-block;
     height: 40px;
     width: 40px;
+    border-radius: 10px;
 }
 
 nav ul {
@@ -36,10 +61,17 @@ nav ul {
 /* main */
 main {
     background-color: #f1ffe7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin-top: 0;
 }
 
 h1, h2, h3 {
     font-family: Helvetica, Arial, Verdana, sans-serif;
+    color: var(--accent-color-2);
 }
 
 p {
@@ -49,14 +81,17 @@ p {
 /* footer */
 footer {
     background-color: #36827f;
+    color: var(--accent-color-2);
+    padding-top: 20px;
+    border-top: var(--accent-color-1) solid 10px;
 }
 
-footer p {
-    display: inline-block;
-}
 
 #github-icon {
     height: 40px;
     width: 40px;
-    display: inline-block;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
 }
