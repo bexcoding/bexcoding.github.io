@@ -1,8 +1,21 @@
 /* all */
+body {
+    margin: 0;
+}
 
 /* header */
-header p {
+header {
+    background-color: #36827f;
+}
+
+header ul{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header h3 {
     display: inline-block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
 }
 
 #website-icon {
@@ -21,8 +34,23 @@ nav ul {
 }
 
 /* main */
+main {
+    background-color: #f1ffe7;
+}
+
+h1, h2, h3 {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+p {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
 
 /* footer */
+footer {
+    background-color: #36827f;
+}
+
 footer p {
     display: inline-block;
 }
