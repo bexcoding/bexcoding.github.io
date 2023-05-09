@@ -94,6 +94,10 @@ main {
     padding: 40px;
 }
 
+h1 {
+    margin-bottom: 40px;
+}
+
 h1, h2, h3 {
     color: var(--accent-color-2);
     text-align: center;
@@ -126,29 +130,25 @@ footer {
     flex-direction: row;
 }
 
-.left-side, .right-side {
-    min-width: 400px;
-}
-
 .left-side {
     border-right: var(--accent-color-1) solid 3px;
     border-radius: 10px 0 0 10px;
-}
-
-.right-side {
-    border-radius: 0 10px 10px 0;
+    min-width: 400px;
 }
 
 .flex-text {
     background-color: var(--background-color-3);
     width: 30%;
     padding: 20px;
-    height: auto;
 }
 
-.flex-image {
+#main-image {
+    height: 900px;
     width: 60%;
     overflow: hidden;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+    min-width: 400px;
 }
 
 .col-flex-container {
