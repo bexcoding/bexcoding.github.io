@@ -168,6 +168,38 @@ p {
     border-radius: 10px;
 }
 
+.textbox {
+    text-align: center;
+    background-color: var(--background-color-3);
+    padding: 20px;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-container figure {
+    background-color: var(--background-color-3);
+    border-radius: 0 0 10px 10px;
+}
+
+.project-container img {
+    max-width: 300px;
+    max-height: auto;
+    border: solid 3px var(--accent-color-1);
+}
+
+.project-container figcaption {
+    padding: 10px;
+    text-align: center;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
 /* footer */
 footer {
     background-color: var(--background-color-2);
