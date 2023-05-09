@@ -216,6 +216,45 @@ footer {
     text-align: center;
 }
 
+/* resume page */
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume .component-header {
+    text-align: center;
+    font-weight: bold;
+    color: var(--accent-color-1);
+}
+
+.resume-component {
+    background-color: var(--background-color-3);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 0 20px 0 20px;
+    width: 600px;
+    border-left: solid 3px var(--accent-color-3);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 600px;
+}
+
+.row-left {
+    width: 70%;
+}
+
+.row-right {
+    width: 30%;
+    text-align: right;
+    color: var(--accent-color-1)
+}
+
 /* learning page */
 
 .learning-display {
