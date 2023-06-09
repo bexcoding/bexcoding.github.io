@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+main {
+    display: grid;
+    height: 1200px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* bold highlight for headings */
+.bold {
+    font-weight: bold;
+}
+
+.color-val {
+    padding-left: 20px;
+}
+
+/* area for selecting a color to work with */
+#selection-area {
+    background-color: #ffffff;
+    grid-area: 1 / 1 / span 2 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#explanation {
+    width: 90%;
+    padding: 0 20px 0 20px;
+}
+
+#color-picker-area {
+    padding: 20px 20px 0 20px;
+    align-self: center;
+}
+
+/* area for displaying the current color and its rgb, hsl, hex values */
+#current-color {
+    background-color: #eeeeee;
+    grid-area: 3 / 1 / span 2 / span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#current-color-display {
+    background-color: #66087a;
+    height: 60%;
+    width: 100%;
+}
+
+#current-color-display:hover{
+    transform: translatex(5px) translatey(-5px);
+    transition: 200ms;
+    box-shadow: -5px 5px 5px 2px #2F4D65;
+}
+
+#current-color-values {
+    background-color: white;
+    height: 40%;
+    width: 100%;
+    padding: 10px 0 0 20px;
+    font-size: 16px;
+}
+
+/* area for displaying related colors (complementary, triadic, etc) */
+#related-colors {
+    background-color: white;
+    border-left: solid 3px black;
+    grid-area: 1 / 3 / span 4 / span 4;
+    padding: 20px
+}
+
+#related-color-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 20px;
+    margin: 20px auto;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+}
+
+/* settings for when new color tiles are created */
+.color-tile {
+    height: 40%;
+    width: 20%;
+    border: solid 1px gray;
+}
+
+.color-tile:hover{
+    transform: translatex(5px) translatey(-5px);
+    transition: 200ms;
+    box-shadow: -5px 5px 5px 2px #2F4D65;
+}
+
+.tile-top {
+    width: 100%;
+    height: 70%;
+}
+
+.tile-bottom {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    text-align: center;
+    padding-top: 19px;
+}
+
+/* area for keeping saved colors */
+#saved-colors {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 3px black;
+    grid-area: 5 / 1 / span 3 / span 6;
+    padding: 20px;
+    min-width: 0;
+    min-height: 0;
+    height: 1000px;
+    text-align: center;
+}
+
+/* settings for when new colors are saved */
+.saved-color {
+    margin-top: 10px;
+    border: 3px solid black;
+    background-color: red;
+    color: red;
+    width: 80%;
+    height: 50px;
+    align-self: center;
+}
+
+.saved-color:hover {
+    transform: translatex(20px);
+    transition: 200ms;
+}
+
+.saved-text {
+    padding-top: 10px;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+.saved-text:hover {
+    color: black;
+    transform: translatex(-100px);
+    transition: 200ms;
+}
+
+footer {
+    grid-area: 7 / 1 / span 1 / span 6
+}
