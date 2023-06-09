@@ -12,6 +12,24 @@ main {
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
 
+/* style for link to return to main website */
+a {
+    float: right;
+    margin: 10px 10px;
+    padding: 20px;
+    background-color: #1a1b41;
+    color: #f9db6d;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+a:hover {
+    color: #850400;
+    background-color: #f9db6d;
+}
+
 /* bold highlight for headings */
 .bold {
     font-weight: bold;
