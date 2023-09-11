@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="ms-style.css">
+  </head>
+  <body>
+    <header>
+      <h1>MineSweeper</h1>
+    </header>
+    <main>
+      <div id="display-area">
+        <div id="timer">10:00</div>
+        <div id="scoreboard">
+          <p>High Score: </p>
+          <div id="hi-score">0</div>
+          <p>Score: </p>
+          <div id="score">0</div>
+          <p>Odds Multiplier: </p>
+          <div id="odds"></div>
+        </div>
+        <div id="difficulty">
+          <div>
+            <input type="radio" name="difficulty" value="1" id="easy" checked>
+            <label for="easy">Easy (10 Bombs)</label>
+          </div>
+          <div>
+            <input type="radio" name="difficulty" value="2" id="medium">
+            <label for="medium">Medium (15 Bombs)</label>
+          </div>
+          <div>
+            <input type="radio" name="difficulty" value="3" id="hard">
+            <label for="hard">Hard (20 Bombs)</label>
+          </div>
+          <div>
+            <input type="radio" name="difficulty" value="4" id="nightmare">
+            <label for="nightmare">Nightmare (30 Bombs)</label>
+          </div>
+        </div>
+        <button id="new-game" type="button" onclick="newGame()">New Game</button>
+      </div>
+      <div id="game-grid">
+      </div>
+    </main>
+    <footer>
+      <script src="ms-script.js"></script>
+    </footer>
+  </body>
+</html>
+

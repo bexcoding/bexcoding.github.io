@@ -1,0 +1,112 @@
+/*
+Title: Minesweeper
+Description: Classic game of minesweeper for browser
+Last Updated: Sep 11, 2023
+Developer: Alexander Beck
+Email: beckhv2@gmail.com
+Github: https://github.com/bexcoding
+*/
+
+
+/* color variables for page theme; red, dark blue, light grey */
+:root {
+    --color-1: #AE0A0A;
+    --color-2: #1E112D;
+    --color-3: #DFDFEC;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: #E5E8F6;
+}
+
+/* banner with red minesweeper title */
+header {
+    text-align: center;
+    font-size: 2em;
+    height: 160px;
+    padding: 20px 40px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    border-bottom: 5px solid var(--color-2);
+}
+
+/* main grid display for page below banner */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(4, 200px);
+    background-color: var(--color-3);
+}
+
+/* area on left with score, high score, and new game button */
+#display-area {
+    width: 320px;
+    height: 800px;
+    background-color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+    border-right: 5px solid var(--color-2);
+    font-size: 1.5em;
+}
+
+#timer {
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-2);
+    border-bottom: 5px solid var(--color-2);
+}
+
+#scoreboard, #score, #hi-score, #odds, #difficulty, #new-game{
+    margin-left: 40px;
+}
+
+#difficulty {
+    font-size: 0.6em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+#new-game {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: white;
+    background-color: var(--color-2);
+    border-radius: 10px;
+}
+
+#new-game:hover {
+    color: var(--color-2);
+    background-color: var(--color-1);
+}
+
+/* grid of buttons for game */
+#game-grid {
+    background-color: var(--color-3);
+    height: 600px;
+    width: 600px;
+    margin: 0 auto 0 180px;
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.game-tile {
+    height: 10%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.game-tile:hover {
+    background-color: var(--color-1);
+}
