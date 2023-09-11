@@ -206,6 +206,10 @@ footer {
     border-radius: 0 0 10px 10px;
 }
 
+.project-container figure:hover {
+    translate: 10px -10px;
+}
+
 .project-container img {
     max-width: 300px;
     max-height: auto;
