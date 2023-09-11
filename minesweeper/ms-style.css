@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 18px;
-    background-color: #E5E8F6;
+    background-color: var(--color-3);
 }
 
 /* banner with red minesweeper title */
@@ -32,6 +32,26 @@ header {
     color: var(--color-2);
     border-bottom: 5px solid var(--color-2);
 }
+
+/* link back to main project page */
+a {
+    float: right;
+    margin: 60px 0;
+    padding: 20px;
+    background-color: #1a1b41;
+    color: #f9db6d;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 0.4em;
+    font-weight: bold;
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+}
+
+a:hover {
+    color: #850400;
+    background-color: #f9db6d;
+}
+
 
 /* main grid display for page below banner */
 main {
