@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedWordle</title>
+    <link rel="stylesheet" href="mw-style.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">MedWordle</h1>
+      <div id="question" onclick="showHowTo()">?</div>
+      <a href="../projects.html">Back</a>
+    </header>
+    <main>
+      <div id="game">
+        <div id="message"></div>
+        <div id="howto">
+          <div id="closeHowto" onclick="hideHowTo()">X</div>
+          <div id="instructions">
+            <h2>How To Play</h2>
+            <p>You have 6 tries to guess the hidden word.</p>
+            <p>Each guess must use all of the available space.</p>
+            <p>The tiles will change color to show how close your guess was.</p>
+            <p>Grey = The letter isn't in the word.</p>
+            <p>Yellow = The letter is in the word but not in the correct space.</p>
+            <p>Green = The letter is in the word and in the correct space.</p>
+          </div>
+        </div>
+        <div id="game-grid">
+        </div>
+        <div id="keyboard">
+          <div id="kb-1">
+            <button type="button" id="q" class="key" onclick="addLetter(id)">Q</button>
+            <button type="button" id="w" class="key" onclick="addLetter(id)">W</button>
+            <button type="button" id="e" class="key" onclick="addLetter(id)">E</button>
+            <button type="button" id="r" class="key" onclick="addLetter(id)">R</button>
+            <button type="button" id="t" class="key" onclick="addLetter(id)">T</button>
+            <button type="button" id="y" class="key" onclick="addLetter(id)">Y</button>
+            <button type="button" id="u" class="key" onclick="addLetter(id)">U</button>
+            <button type="button" id="i" class="key" onclick="addLetter(id)">I</button>
+            <button type="button" id="o" class="key" onclick="addLetter(id)">O</button>
+            <button type="button" id="p" class="key" onclick="addLetter(id)">P</button>
+          </div>
+          <div id="kb-2">
+            <button type="button" id="a" class="key" onclick="addLetter(id)">A</button>
+            <button type="button" id="s" class="key" onclick="addLetter(id)">S</button>
+            <button type="button" id="d" class="key" onclick="addLetter(id)">D</button>
+            <button type="button" id="f" class="key" onclick="addLetter(id)">F</button>
+            <button type="button" id="g" class="key" onclick="addLetter(id)">G</button>
+            <button type="button" id="h" class="key" onclick="addLetter(id)">H</button>
+            <button type="button" id="j" class="key" onclick="addLetter(id)">J</button>
+            <button type="button" id="k" class="key" onclick="addLetter(id)">K</button>
+            <button type="button" id="l" class="key" onclick="addLetter(id)">L</button>
+          </div>
+          <div id="kb-3">
+            <button type="button" id="enter" class="key" onclick="checkAnswer(currentGuess)">Enter</button>
+            <button type="button" id="z" class="key" onclick="addLetter(id)">Z</button>
+            <button type="button" id="x" class="key" onclick="addLetter(id)">X</button>
+            <button type="button" id="c" class="key" onclick="addLetter(id)">C</button>
+            <button type="button" id="v" class="key" onclick="addLetter(id)">V</button>
+            <button type="button" id="b" class="key" onclick="addLetter(id)">B</button>
+            <button type="button" id="n" class="key" onclick="addLetter(id)">N</button>
+            <button type="button" id="m" class="key" onclick="addLetter(id)">M</button>
+            <button type="button" id="del" class="key" onclick="subtractLetter(id)">Del</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <script src="mw-script.js"></script>
+    </footer>
+  </body>
+</html>
